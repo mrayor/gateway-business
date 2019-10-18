@@ -15,6 +15,20 @@ class CreateListingsTable extends Migration
     {
         Schema::create('listings', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('address');
+            $table->string('images');
+            $table->text('description');
+            $table->text('services');
+            $table->string('phone');
+            $table->string('website');
+            $table->string('email');
+            $table->string('facebook');
+            $table->string('twitter');
+            $table->string('instagram');
+            $table->boolean('agree_terms')->default(0);
+            $table->boolean('is_verified')->default(0);
+            $table->unsignedInteger('user_id');
             $table->timestamps();
         });
     }
