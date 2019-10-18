@@ -1,4 +1,4 @@
-<div class="border-t-tiny mt-12 border-gray-500 md:mt-0"></div>
+<div class="border-t-tiny mt-12 border-gray-500"></div>
 <div class="container mx-auto mt-10">
     <div class="md:flex md:justify-around">
         <div class="md:w-48">
