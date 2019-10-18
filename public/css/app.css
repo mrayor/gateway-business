@@ -940,6 +940,15 @@ video {
   -ms-overflow-style: none; /* IE 10+ */
 }
 
+/* Custom Utilities */
+
+.gw-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* button */
 
 .btn {
@@ -978,21 +987,7 @@ video {
 /* forms */
 
 .form-input {
-  display: block;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   width: 100%;
-  border-radius: 0.25rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  line-height: 1.25;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.form-input:focus {
-  outline: 0;
 }
 
 /**
