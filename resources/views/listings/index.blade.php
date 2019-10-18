@@ -1,78 +1,82 @@
 @extends('layouts.master')
 
-@section('title','Home')
+@section('title','All Listings')
 
 @section('header')
 @include('includes.navbar')
-<section class="pb-20 h-full lg:py-24" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url(/img/header-image.jpg) top center;
-
-  background-size: cover;">
-    <div class="container mx-auto">
-        <div class="pt-10 lg:text-center lg:pt-0">
-            <h1 class="text-3xl text-white font-bold lg:text-5xl">Products and Services in Ogun State</h1>
-            <h3 class="text-white text-small lg:text-2xl">Explore businesses operating in the Gateway State</h3>
+<section class="mt-4">
+    <div class="container">
+        <div class="flex items-center justify-between">
+            <a href="" class="btn btn-primary">Go back</a>
+            <a href="" class="text-sm font-bold"><i class="fas fa-filter mr-2"></i>Show Filters</a>
         </div>
-        <div class="mt-16 lg:mt-8">
+        <div class="mt-5 hidden">
             @include('includes.form')
-        </div>
+            <div class="border-t-tiny mt-2 border-gray-500"></div>
+            <form action="">
 
+                <div class="flex flex-wrap justify-between">
+                    <div class="mt-2 w-5/12 md:w-1/3 lg:w-1/4">
+                        <label class="items-center">
+                            <input type="checkbox" class="form-checkbox">
+                            <span class="ml-2 text-xs">Porpular Category</span>
+                        </label>
+                    </div>
+                    <div class="mt-2 w-5/12 md:w-1/3 lg:w-1/4">
+                        <label class="items-center">
+                            <input type="checkbox" class="form-checkbox">
+                            <span class="ml-2 text-xs">Porpular Category</span>
+                        </label>
+                    </div>
+                    <div class="mt-2 w-5/12 md:w-1/3 lg:w-1/4">
+                        <label class="items-center">
+                            <input type="checkbox" class="form-checkbox">
+                            <span class="ml-2 text-xs">Porpular Category</span>
+                        </label>
+                    </div>
+                    <div class="mt-2 w-5/12 md:w-1/3 lg:w-1/4">
+                        <label class="items-center">
+                            <input type="checkbox" class="form-checkbox">
+                            <span class="ml-2 text-xs">Porpular Category</span>
+                        </label>
+                    </div>
+                    <div class="mt-2 w-5/12 md:w-1/3 lg:w-1/4">
+                        <label class="items-center">
+                            <input type="checkbox" class="form-checkbox">
+                            <span class="ml-2 text-xs">Porpular Category</span>
+                        </label>
+                    </div>
+                    <div class="mt-2 w-5/12 md:w-1/3 lg:w-1/4">
+                        <label class="items-center">
+                            <input type="checkbox" class="form-checkbox">
+                            <span class="ml-2 text-xs">Porpular Category</span>
+                        </label>
+                    </div>
+                    <div class="mt-2 w-5/12 md:w-1/3 lg:w-1/4">
+                        <label class="items-center">
+                            <input type="checkbox" class="form-checkbox">
+                            <span class="ml-2 text-xs">Porpular Category</span>
+                        </label>
+                    </div>
+                    <div class="mt-2 w-5/12 md:w-1/3 lg:w-1/4">
+                        <label class="items-center">
+                            <input type="checkbox" class="form-checkbox">
+                            <span class="ml-2 text-xs">Porpular Category</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <button type="submit" class="btn btn-primary">Filter</button>
+                </div>
+        </div>
+        </form>
+        <h2 class="text-2xl font-bold mt-6">Listings</h2>
     </div>
 </section>
 @endsection
 
 @section('content')
-<div class="container mx-auto mt-10">
-
-    <div class="text-center">
-        <h1 class="text-2xl lg:text-3xl">Porpular Categories</h1>
-        <div class="w-20 border-t-2 mt-1 border-primary mx-auto"></div>
-    </div>
-    <div class="mt-5 flex flex-row flex-wrap">
-        <a href="#" class="mx-auto">
-            <div class="bg-gray-200 rounded-lg max-w-sm p-4 mb-2 " style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url(/img/category-image.jpg) top center;
-      background-size: cover;">
-                <div class="text-center">
-                    <h3 class="text-white text-xl">Restaurant</h3>
-                    <span class="text-black text-sm bg-gray-200 p-1 rounded-lg">23</span>
-                </div>
-            </div>
-        </a>
-        <a href="#" class="mx-auto">
-            <div class="bg-gray-200 rounded-lg max-w-sm p-4 mb-2 " style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url(/img/category-image.jpg) top center;
-      background-size: cover;">
-                <div class="text-center">
-                    <h3 class="text-white text-xl">Restaurant</h3>
-                    <span class="text-black text-sm bg-gray-200 p-1 rounded-lg">23</span>
-                </div>
-            </div>
-        </a>
-        <a href="#" class="mx-auto">
-            <div class="bg-gray-200 rounded-lg max-w-sm p-4 mb-2 " style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url(/img/category-image.jpg) top center;
-      background-size: cover;">
-                <div class="text-center">
-                    <h3 class="text-white text-xl">Restaurant</h3>
-                    <span class="text-black text-sm bg-gray-200 p-1 rounded-lg">23</span>
-                </div>
-            </div>
-        </a>
-        <a href="#" class="mx-auto">
-            <div class="bg-gray-200 rounded-lg max-w-sm p-4 mb-2 " style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url(/img/category-image.jpg) top center;
-      background-size: cover;">
-                <div class="text-center">
-                    <h3 class="text-white text-xl">Restaurant</h3>
-                    <span class="text-black text-sm bg-gray-200 p-1 rounded-lg">23</span>
-                </div>
-            </div>
-        </a>
-
-    </div>
-</div>
-<div class="container mx-auto mt-10 text-center">
-    <h1 class="text-2xl lg:text-3xl">Premium Adverts</h1>
-    <div class="w-20 border-t-2 mt-1 border-primary mx-auto"></div>
-</div>
-<div
-    class="container mx-auto flex overflow-x-auto pb-8 px-4 lg:overflow-hidden lg:flex-wrap lg:justify-between disable-scrollbars">
+<div class="container mx-auto flex pb-8 px-4 overflow-hidden flex-wrap justify-between">
     <div class="max-w-xs lg:mr-0 w-full flex-shrink-0 rounded overflow-hidden shadow-lg mt-5 mr-4 lg:w-1/3 ">
         <img class="w-full" src="/img/hotel-image.jpg" alt="hotel-image">
         <div class="px-6 py-2">
@@ -177,34 +181,8 @@
     </div>
 
 </div>
-<div class="container mx-auto text-center">
+<div class="container mx-auto text-center md:mb-5">
     <a href="" class="btn btn-primary shadow">View More</a>
-</div>
-<div class="container mx-auto mt-10 text-center">
-    <h1 class="text-2xl lg:text-3xl">Our Partners</h1>
-    <div class="w-20 border-t-2 mt-1 border-primary mx-auto"></div>
-</div>
-<div class="flex overflow-x-auto pb-8 px-4 disable-scrollbars">
-    <div class="max-w-xs w-full flex-shrink-0 overflow-hidden mt-5 mr-4">
-        <img class="w-full" src="/img/partner-image.png" alt="partner-image">
-
-    </div>
-    <div class="max-w-xs w-full flex-shrink-0 overflow-hidden mt-5 mr-4 ">
-        <img class="w-full" src="/img/partner-image.png" alt="partner-image">
-
-    </div>
-    <div class="max-w-xs w-full flex-shrink-0 overflow-hidden mt-5 mr-4 ">
-        <img class="w-full" src="/img/partner-image.png" alt="partner-image">
-    </div>
-    <div class="max-w-xs w-full flex-shrink-0 overflow-hidden mt-5 mr-4 ">
-        <img class="w-full" src="/img/partner-image.png" alt="partner-image">
-    </div>
-    <div class="max-w-xs w-full flex-shrink-0 overflow-hidden mt-5 mr-4 ">
-        <img class="w-full" src="/img/partner-image.png" alt="partner-image">
-    </div>
-    <div class="max-w-xs w-full flex-shrink-0 overflow-hidden mt-5 mr-4 ">
-        <img class="w-full" src="/img/partner-image.png" alt="partner-image">
-    </div>
 </div>
 @endsection
 @section('footer')

@@ -14,4 +14,10 @@
 use Illuminate\Support\Facades\Route;
 
 Auth::routes();
+
+//Pages
 Route::get('/', 'PagesController@index')->name('home');
+Route::get('/get-listed', 'PagesController@getListed')->name('get_listed');
+Route::get('/contact', 'PagesController@contact')->name('contact');
+Route::get('/singlelisting', 'PagesController@show');
+Route::resource('listings', 'ListingsController');

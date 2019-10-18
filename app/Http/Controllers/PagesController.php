@@ -10,4 +10,16 @@ class PagesController extends Controller
     {
         return view('pages.index');
     }
+    public function getListed()
+    {
+        return view('pages.get_listed');
+    }
+    public function contact()
+    {
+        return view('pages.contact');
+    }
+    public function show()
+    {
+        return view('pages.single_listing');
+    }
 }
